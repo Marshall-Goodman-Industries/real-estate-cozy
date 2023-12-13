@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+ height:1px;
+ width:1px;
+ background-color: #2c2929;
+}
+::-webkit-scrollbar-thumb{
+  background-color:blue;
+}
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Add all the global styles here, Including color  */
+:root {
+  --primary-color: #ED3237;
+  --secondary-color-1: #1E1E1E;
+  --secondary-color-2: #7A7A7B;
+}
+
+/* styles/globals.css */
+.trapezium__right {
+  clip-path: polygon(0 0, 100% 12%, 100% 91%, 0% 100%);
+}
+
+
+.trapezium__left {
+  clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 91%);
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+
+.slide {
+  transform: scale(0.7);
+  transition: transform 300ms;
+}
+
+
+.activeSlide {
+  transform: scale(1.1);
+  width: 90rem;
+}
+
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.next {
+  bottom: 0;
+}
+
+.prev {
+  bottom: 0;
+}
+
+ .swiper {
+  max-width: 70rem;
+  padding-top: 100px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  height: max-content;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.swiper-slide .slide-content {
+  background-color: white;
+  color: black;
+ margin-top: 40px;
+ margin-bottom: 40px;
+  width: 100%;
+  border-radius: 13.57px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.swiper-slide-active .slide-content {
+  color: white;
+  background: linear-gradient(135.27deg, #ED3237 -8.06%, #E8AA29 112.41%);
+  /* text-align: center; */
+
+}
+
+
+@media (max-width: 668px) {
+  .swiper-slide .slide-content {
+   
+    width: 200.22px;
+  }
+}
+
+@media (max-width:310px) {
+  .swiper-slide-active .slide-content {
+    
+    margin-left: -27px;
+  }
+  
+}
+
+@media (max-width:375px) {
+  .swiper-slide-active .slide-content {
+    
+    margin-left: -3px;
+  }
+  
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animateSlideUp {
+  animation-name: slide-up;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+
+
+
+
+
+
+

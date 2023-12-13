@@ -1,0 +1,32 @@
+@keyframes bouncev {
+    
+    
+    0% {
+        transform: translateY(-25%);
+        opacity: 0%;
+        animation-timing-function: cubic-bezier(0.86, 0, 1, 1);
+
+    }
+    100%{
+      
+        opacity: 100%;
+        animation-timing-function: cubic-bezier(0.86, 0, 1, 1);
+
+    }
+    50%{
+        opacity: 50%;
+        transform: translateY(-0%);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
+    }
+    
+}
+
+
+.bounce_css{
+
+    animation: bouncev 1s   ;
+    
+    /* animation-delay: 4s; */
+
+}
