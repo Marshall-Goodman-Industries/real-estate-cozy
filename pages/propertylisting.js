@@ -121,7 +121,7 @@ let Head_ = () => {
 
 
 
-                                <select  className="rounded-md w-full md_:w-[300px] h-[40px] px-5">
+                                <select key={index}  className="rounded-md w-full md_:w-[300px] h-[40px] px-5">
                                     <option value={e.label}>{e.label}</option>
                                     {e.options.map((e, index) => {
                                         

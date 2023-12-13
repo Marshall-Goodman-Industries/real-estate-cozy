@@ -14,7 +14,7 @@ import Link from "next/link";
 let images = [1, 2, 3, 2, 3]
 
 
- const PasswordOtp() => {
+ const PasswordOtp = () => {
    
 
 
