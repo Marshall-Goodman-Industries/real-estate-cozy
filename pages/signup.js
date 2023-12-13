@@ -13,7 +13,7 @@ import { ProjectList } from "@/components/Layout/projectlist";
 let images = [1, 2, 3, 2, 3]
 
 
-export default () => {
+export default function Signup ()  {
    
 
 

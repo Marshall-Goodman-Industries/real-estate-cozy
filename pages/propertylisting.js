@@ -27,7 +27,7 @@ let Head_ = () => {
     />
   </Head>
   }
-export default () => {
+ const Propertylisting = () => {
     const router =useRouter()
     let [moreSettings ,setmoreSettings] = useState(false)
     let [moreFeatures ,setmoreFeatures] = useState(false)
@@ -125,7 +125,7 @@ export default () => {
                                     <option value={e.label}>{e.label}</option>
                                     {e.options.map((e, index) => {
                                         
-                                        <option value={e}>{e}</option>
+                                        <option key={index} value={e}>{e}</option>
                                     })}
                                 {/* <option value="forRent">For Rent</option> */}
                                 </select>
@@ -135,7 +135,7 @@ export default () => {
                             return (
 
 
-                            <input className="rounded-md px-5 w-full md_:w-[300px] h-[40px]"  placeholder={e} type="number"/>
+                            <input key={index} className="rounded-md px-5 w-full md_:w-[300px] h-[40px]"  placeholder={e} type="number"/>
                             )
                         })}
                         <input className="px-5 rounded-md w-full md_:w-[300px] h-[40px] " placeholder="Property ID"/>
@@ -145,7 +145,7 @@ export default () => {
                     {[{label:"Price Range: from $200 to $2,500,000" ,min:200,max:20000000},{label:"Price Range: from $200 to $2,500,000" ,min:200,max:20000000},{label:"Price Range: from $200 to $2,500,000" ,min:200,max:20000000}].map((e, index) => {
                             return (
 
-                                <div className="w-full md_:w-[600px] ">
+                                <div key={index} className="w-full md_:w-[600px] ">
                                     <label>{e.label}</label>
                                     <div className="relative w-full ">
                                         <Rangeslider/>
@@ -169,7 +169,7 @@ export default () => {
                             return (
 
 
-                                <div className="flex gap-[10px] items-center">
+                                <div key={index} className="flex gap-[10px] items-center">
                                 <label htmlFor={e}>{e}</label>
                                 <input id={e}  placeholder={e} className="rounded-md  " type="checkbox"/>
                                 </div>
@@ -211,3 +211,5 @@ export default () => {
     )
     
 }
+
+export default  Propertylisting 

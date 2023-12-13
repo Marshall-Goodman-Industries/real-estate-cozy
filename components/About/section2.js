@@ -42,7 +42,7 @@ export const Section2 = () => {
             list.map((e, index) => {
               return (
               
-        <div className="rounded-md shadow-md w-full md_:w-[400px] p-5   gap-[20px] flex justify-between items-center flex-col ">
+        <div key={index} className="rounded-md shadow-md w-full md_:w-[400px] p-5   gap-[20px] flex justify-between items-center flex-col ">
        <e.image xs="width:100%;height:100%;" className="text-orange1"/>
                   <h1 className="font-bold md_:text-[20px]">{ e.name}</h1>
           <p>

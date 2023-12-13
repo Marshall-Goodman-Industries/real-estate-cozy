@@ -14,7 +14,7 @@ import Link from "next/link";
 let images = [1, 2, 3, 2, 3]
 
 
-export default () => {
+export default function ResetPassword ()  {
    
 
 

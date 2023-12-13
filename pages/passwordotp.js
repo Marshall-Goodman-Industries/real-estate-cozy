@@ -14,7 +14,7 @@ import Link from "next/link";
 let images = [1, 2, 3, 2, 3]
 
 
-export default () => {
+ const PasswordOtp() => {
    
 
 
@@ -53,3 +53,4 @@ export default () => {
     )
     
 }
+export default  PasswordOtp

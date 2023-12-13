@@ -14,7 +14,7 @@ import Link from "next/link";
 let images = [1, 2, 3, 2, 3]
 
 
-export default () => {
+ const  Login = () => {
    
 
 
@@ -56,3 +56,5 @@ export default () => {
     )
     
 }
+
+export default   Login

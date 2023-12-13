@@ -67,7 +67,7 @@ export const Section5 = () => {
                     // },
                 ].map((e, index) => {
                     return (
-                        <div ref={[ref, ref2, ref3][index]} className={` ${[inView, inView2, inView3][index] ? "visible animate-slideright1" : "invisible"} group hover:transform hover:scale-[105%] flex p-5 shadow-md  gap-[30px] items-center w-full min-h-[100px]`}>
+                        <div map={index} ref={[ref, ref2, ref3][index]} className={` ${[inView, inView2, inView3][index] ? "visible animate-slideright1" : "invisible"} group hover:transform hover:scale-[105%] flex p-5 shadow-md  gap-[30px] items-center w-full min-h-[100px]`}>
                         <div className="flex justify-center items-center w-[80px] h-[80px] ">
                         {/* <Image
                   alt=""
